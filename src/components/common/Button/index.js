@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   cursor: pointer;
-  border-radius: 3px;
-  padding: 0.7rem 2.5rem;
+  padding: 0.9rem 2.5rem;
   border: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
@@ -13,7 +12,8 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #0074d9;
+  background: #cb2027;
+  transition: 0.3s;
 
   &:focus {
     outline: none;
@@ -27,5 +27,21 @@ export const Button = styled.button`
     secondary &&
     `
 		background: #001F3F;
-	`}
+  `};
+
+  ${({ transparent }) =>
+    transparent &&
+    `
+    opacity: .5;
+    border: 2px solid #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: Gotham Medium;
+
+    &:hover {
+      border: 2px solid #cb2027;
+      color: #cb2027;
+      opacity: 0.9;
+    }
+  `};
 `;

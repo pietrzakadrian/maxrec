@@ -1,19 +1,21 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/overlay.svg';
+import overlayIllustration from 'assets/illustrations/background2.jpg';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   background-image: url(${overlayIllustration});
-  background-size: contain;
-  background-position: right top;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
 `;
 
 export const IntroWrapper = styled.div`
   padding: 4rem 0;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -51,13 +53,20 @@ export const Details = styled.div`
 `;
 
 export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
+  img {
+    width: 85%;
+    height: auto;
   }
 
-  img {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    img {
+      width: 500px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    img {
+      width: 700px;
+    }
   }
 `;

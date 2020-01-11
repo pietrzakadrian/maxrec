@@ -1,26 +1,26 @@
 [
   {
     "id": 0,
-    "name": "Telegram",
-    "link": "https://t.me/smakosh",
-    "icon": "/icons/telegram.svg"
+    "name": "Facebook",
+    "link": "https://facebook.com",
+    "icon": "/icons/facebook.svg"
   },
   {
     "id": 1,
-    "name": "Github",
-    "link": "https://github.com/smakosh",
-    "icon": "/icons/github.svg"
+    "name": "Instagram",
+    "link": "https://www.instagram.com/maksymiliangrela",
+    "icon": "/icons/instagram.svg"
   },
   {
     "id": 2,
-    "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/story/7396786",
-    "icon": "/icons/stackoverflow.svg"
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/maksymilian-grela-807784179",
+    "icon": "/icons/linkedin.svg"
   },
   {
     "id": 3,
-    "name": "Twitter",
-    "link": "https://twitter.com/smakosh",
-    "icon": "/icons/twitter.svg"
+    "name": "YouTube",
+    "link": "https://www.youtube.com/channel/UCz7rvc73xgnorUqvDyjq7rA",
+    "icon": "/icons/youtube.svg"
   }
 ]

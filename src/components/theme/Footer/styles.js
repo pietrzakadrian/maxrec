@@ -27,17 +27,27 @@ export const Flex = styled.div`
 export const Links = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   a {
-    margin: 0 0.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
 
     img {
       margin: 0;
     }
+  }
 
-    &:first-child,
-    &:last-child {
-      margin: 0;
+  @media screen and (min-width: 768px) {
+    a {
+      margin: 0 0.9rem;
+
+      img {
+        margin: 0;
+      }
     }
   }
 `;
