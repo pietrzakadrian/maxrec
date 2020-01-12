@@ -23,12 +23,20 @@ export const Wrapper = styled.div`
 			}
 		`
       : `
-			padding: 3rem;
+			padding: 0 3rem;
 			display: flex;
 			flex-direction: column;
+			height: 100%;
+			display: flex
+			justify-content: center;
+			align-items: center;
 
 			a {
-					margin-bottom: 1rem;
+					line-height: 70px;
+					color: #fff;
+					text-transform: initial;
+					font-size: 2.188rem;
+					font-family: 'GothamBook';
 
 					&:last-child {
 							margin-bottom: unset;

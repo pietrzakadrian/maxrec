@@ -28,11 +28,15 @@
 }
 
 @font-face {
-  font-family: "Gotham Medium";
-  font-style: normal;
-  font-display: fallback;
-  font-weight: 400;
-  src: url("./fonts/GothamMediumRegular.ttf");
-  src: local("Gotham Medium"), local("Gotham-Medium"),
-    url("./fonts/GothamMediumRegular.ttf") format("truetype");
+  font-family: "GothamBook";
+  src: url("./fonts/GothamBook.eot");
+  src: local("GothamBook"), url("./fonts/GothamBook.woff") format("woff"),
+    url("./fonts/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamLight";
+  src: url("./fonts/GothamLight.eot");
+  src: local("GothamLight"), url("./fonts/GothamLight.woff") format("woff"),
+    url("./fonts/GothamLight.ttf") format("truetype");
 }

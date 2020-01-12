@@ -32,16 +32,24 @@ export const Button = styled.button`
   ${({ transparent }) =>
     transparent &&
     `
-    opacity: .5;
-    border: 2px solid #fff;
+    opacity: .7;
+    border: 1.8px solid #fff;
     background-color: transparent;
     text-transform: uppercase;
-    font-family: Gotham Medium;
+    font-family: 'GothamLight';
+    padding-top: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
 
     &:hover {
       border: 2px solid #cb2027;
       color: #cb2027;
-      opacity: 0.9;
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 18px;
+      font-size: 14px;
     }
   `};
 `;
