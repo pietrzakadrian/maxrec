@@ -4,16 +4,16 @@ import { Wrapper } from './styles';
 
 const NavbarLinks = ({ desktop, toggle, sidebar }) => (
   <Wrapper desktop={desktop}>
-    <AnchorLink onClick={() => toggle(!sidebar)} href="#about">
+    <AnchorLink onClick={() => sidebar && toggle && toggle(!sidebar)} href="#about">
       O nas
     </AnchorLink>
-    <AnchorLink onClick={() => toggle(!sidebar)} href="#projects">
+    <AnchorLink onClick={() => sidebar && toggle && toggle(!sidebar)} href="#projects">
       Teledyski
     </AnchorLink>
-    <AnchorLink onClick={() => toggle(!sidebar)} href="#contact">
+    <AnchorLink onClick={() => sidebar && toggle && toggle(!sidebar)} href="#contact">
       Film
     </AnchorLink>
-    <AnchorLink onClick={() => toggle(!sidebar)} href="#contact">
+    <AnchorLink onClick={() => sidebar && toggle && toggle(!sidebar)} href="#contact">
       Kontakt
     </AnchorLink>
   </Wrapper>

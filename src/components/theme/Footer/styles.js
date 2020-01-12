@@ -1,11 +1,14 @@
 import styled from 'styled-components';
+import overlayIllustration from 'assets/illustrations/background2.jpg';
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  background-image: url('../illustrations/footer.svg');
+  // background-image: url(${overlayIllustration});
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid red;
+  background-color: #151515;
 
   @media (max-width: 1960px) {
     padding: 14rem 0 4rem;
@@ -43,8 +46,6 @@ export const Links = styled.div`
 
   @media screen and (min-width: 768px) {
     a {
-      margin: 0 0.9rem;
-
       img {
         margin: 0;
       }

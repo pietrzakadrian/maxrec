@@ -42,7 +42,7 @@ export const Button = styled.button`
     letter-spacing: 2px;
 
     &:hover {
-      border: 2px solid #cb2027;
+      border: 1.8px solid #cb2027;
       color: #cb2027;
       opacity: 1;
     }

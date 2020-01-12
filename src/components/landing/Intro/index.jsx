@@ -28,7 +28,9 @@ export const Intro = () => (
         </Button>
       </div>
 
-      <div style={{ position: 'absolute', bottom: '5%', left: '50%', transform: 'translateX(-50%)', width: 190 }}>
+      <div
+        style={{ position: 'absolute', bottom: '5%', left: '50%', transform: 'translateX(-50%)', width: 190 || 250 }}
+      >
         <Links>
           {social.map(({ id, name, link, icon }) => (
             <a
