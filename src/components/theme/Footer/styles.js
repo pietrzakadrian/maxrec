@@ -3,15 +3,14 @@ import overlayIllustration from 'assets/illustrations/background2.jpg';
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  // background-image: url(${overlayIllustration});
+  background-image: url(${overlayIllustration});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid red;
   background-color: #151515;
 
   @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+    padding: 9rem 4rem 6rem;
   }
 `;
 

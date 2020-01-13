@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  max-width: 500px;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -13,7 +14,6 @@ export const Wrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  padding-right: 2rem;
 
   @media (max-width: 960px) {
     padding-right: unset;

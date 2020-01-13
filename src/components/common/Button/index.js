@@ -26,7 +26,16 @@ export const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     `
-		background: #001F3F;
+    background: #000;
+    text-transform: uppercase;
+    font-family: 'GothamLight';
+    font-size: 13px;
+    width: 100%;
+    padding: 16px 0 14px;
+
+    &:hover {
+      background: #151515;
+    }
   `};
 
   ${({ transparent }) =>
@@ -36,10 +45,10 @@ export const Button = styled.button`
     border: 1.8px solid #fff;
     background-color: transparent;
     text-transform: uppercase;
-    font-family: 'GothamLight';
-    padding-top: 15px;
+    font-family: 'GothamBook';
+    padding-top: 24px;
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 1.1px;
 
     &:hover {
       border: 1.8px solid #cb2027;
@@ -48,7 +57,7 @@ export const Button = styled.button`
     }
 
     @media screen and (min-width: 768px) {
-      padding-top: 18px;
+      padding-top: 24px;
       font-size: 14px;
     }
   `};

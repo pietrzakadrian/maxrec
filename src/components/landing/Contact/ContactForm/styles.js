@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Error = styled.span`
   color: #ff4136;
+  font-size: 13px;
+  font-family: 'GothamLight';
 `;
 
 export const Center = styled.div`

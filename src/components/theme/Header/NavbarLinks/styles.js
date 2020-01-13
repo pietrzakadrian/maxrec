@@ -7,6 +7,25 @@ export const Wrapper = styled.div`
     text-transform: uppercase;
   }
 
+  ${({ footer }) =>
+    footer &&
+    `
+		  display: flex;
+		  flex-direction: column;
+		
+		  a {
+				text-transform: initial;
+				color: #fff;
+				font-size: 14px;
+				margin-bottom: 0.4rem;
+
+					&:last-child {
+							margin-bottom: unset;
+					}
+		  }
+	`}
+ }
+
   ${({ desktop }) =>
     desktop
       ? `
