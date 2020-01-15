@@ -4,6 +4,8 @@ import { Container, Card } from 'components/common';
 import starIcon from 'assets/icons/star.svg';
 import forkIcon from 'assets/icons/fork.svg';
 import YouTube from 'react-youtube';
+import movies from 'components/common/Movie/movies';
+import { Image } from 'components/common/Image';
 import { Wrapper, Grid, Item, Content, Stats } from './styles';
 
 const opts = {
@@ -26,12 +28,16 @@ export const Movies = () => (
     <h2>Film</h2>
     <div style={{ display: 'flex', justifyContent: 'space-around' }}>
       <Grid>
-        <YouTube videoId="7zixHshR1s8" opts={opts} onReady={_onReady} />
+        {movies.map(movie => (
+          <Image key={movie.id} src={movie.image} hover={movie.hover} alt="test" />
+        ))}
+
+        {/* <YouTube videoId="7zixHshR1s8" opts={opts} onReady={_onReady} />
         <YouTube videoId="fOfJ0_CzaY8" opts={opts} onReady={_onReady} />
         <YouTube videoId="VAn4C2l-Jb4" opts={opts} onReady={_onReady} />
         <YouTube videoId="y65Z51FFCSU" opts={opts} onReady={_onReady} />
         <YouTube videoId="esZ8iv2fb60" opts={opts} onReady={_onReady} />
-        <YouTube videoId="CYbC3mhRCyU" opts={opts} onReady={_onReady} />
+        <YouTube videoId="CYbC3mhRCyU" opts={opts} onReady={_onReady} /> */}
       </Grid>
     </div>
   </Wrapper>
