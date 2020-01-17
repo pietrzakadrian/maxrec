@@ -34,7 +34,7 @@ export const Wrapper = styled.div`
 			}
 
 			a {
-					margin-right: 1rem;
+					margin-right: 1.3rem;
 
 					&:last-child {
 							margin-right: unset;

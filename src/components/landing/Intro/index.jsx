@@ -12,17 +12,12 @@ export const Intro = () => (
   <Wrapper>
     <Header />
     <IntroWrapper as={Container}>
-      {/* <Details>
-        <h1>Hi There!</h1>
-        <h4>I’m John and I’m a Backend & Devops engineer!</h4>
-    
-      </Details> */}
       <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: 0, left: 0 }}>
         <Thumbnail>
           <img style={{ marginBottom: 50 }} src={logo} alt="MAXREC Maksymilian Grela" />
         </Thumbnail>
 
-        <Button transparent="true" as={AnchorLink} href="#contact">
+        <Button transparent="true" as={AnchorLink} href="#about-us">
           Rozpocznij
         </Button>
       </div>
