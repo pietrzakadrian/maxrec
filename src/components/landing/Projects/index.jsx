@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Card } from 'components/common';
-import starIcon from 'assets/icons/star.svg';
-import forkIcon from 'assets/icons/fork.svg';
 import YouTube from 'react-youtube';
 import { Image } from 'components/common/Image';
 import musicVideos from 'components/common/MusicVideo/music-videos';

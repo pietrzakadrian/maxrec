@@ -2,7 +2,6 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/dev.svg';
 import logo from 'assets/logos/max_rec_white.png';
 import social from 'components/theme/Footer/social';
 import { Links } from 'components/theme/Footer/styles';
