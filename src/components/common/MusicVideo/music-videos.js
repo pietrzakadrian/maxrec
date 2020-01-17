@@ -16,31 +16,37 @@ const musicVideos = [
     id: 1,
     image: img1,
     hover: img1_h,
+    link: 'Te_0LvaPwgA',
   },
   {
     id: 2,
     image: img2,
     hover: img2_h,
+    link: 'l0tNYMwlWaA',
   },
   {
     id: 3,
     image: img3,
     hover: img3_h,
+    link: '36KcK_uq44M',
   },
   {
     id: 4,
     image: img4,
     hover: img4_h,
+    link: 'CfacHCkuZp4',
   },
   {
     id: 5,
     image: img5,
     hover: img5_h,
+    link: 'hbX2lQlJwTE',
   },
   {
     id: 6,
     image: img6,
     hover: img6_h,
+    link: 'lsWglt2GRM8',
   },
 ];
 

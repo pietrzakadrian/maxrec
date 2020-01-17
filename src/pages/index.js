@@ -1,14 +1,15 @@
 import React from 'react';
 import { Layout, SEO } from 'components/common';
-import { Intro, Skills, Contact, Projects, Movies } from 'components/landing';
+import { Intro, Photography, Contact, MusicVideos, Movies, AboutUs } from 'components/landing';
 
 export default () => (
   <Layout>
     <SEO />
     <Intro />
-    <Projects />
+    <AboutUs />
+    <MusicVideos />
     <Movies />
-    <Skills />
+    <Photography />
     <Contact />
   </Layout>
 );

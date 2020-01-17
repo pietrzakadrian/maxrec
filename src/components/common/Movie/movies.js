@@ -16,31 +16,37 @@ const movies = [
     id: 1,
     image: img1,
     hover: img1_h,
+    link: '7zixHshR1s8',
   },
   {
     id: 2,
     image: img2,
     hover: img2_h,
+    link: 'fOfJ0_CzaY8',
   },
   {
     id: 3,
     image: img3,
     hover: img3_h,
+    link: 'VAn4C2l-Jb4',
   },
   {
     id: 4,
     image: img4,
     hover: img4_h,
+    link: 'y65Z51FFCSU',
   },
   {
     id: 5,
     image: img5,
     hover: img5_h,
+    link: 'esZ8iv2fb60',
   },
   {
     id: 6,
     image: img6,
     hover: img6_h,
+    link: 'CYbC3mhRCyU',
   },
 ];
 

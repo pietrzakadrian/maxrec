@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Image = styled.div`
   background-image: ${({ src }) => `url('${src}')`};
-  height: 215px;
+  height: 224px;
+  width: 100%;
   background-size: contain;
   transition: 0.2s;
   background-position: center;

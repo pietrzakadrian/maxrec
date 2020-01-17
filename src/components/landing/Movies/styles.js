@@ -45,6 +45,7 @@ export const Stats = styled.div`
 
   div {
     display: flex;
+
     &:first-child {
       margin-right: 0.5rem;
     }
