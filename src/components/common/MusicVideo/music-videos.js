@@ -11,7 +11,7 @@ import img5_h from 'assets/thumbnails/music_video/5_hover.jpg';
 import img6 from 'assets/thumbnails/music_video/6.jpg';
 import img6_h from 'assets/thumbnails/music_video/6_hover.jpg';
 
-const musicVideos = [
+export const musicVideos = [
   {
     id: 1,
     image: img1,
@@ -49,5 +49,3 @@ const musicVideos = [
     link: 'lsWglt2GRM8',
   },
 ];
-
-export default musicVideos;

@@ -4,6 +4,11 @@ export const Wrapper = styled.div`
   padding: 2rem 0;
 `;
 
+export const MoviesWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
 export const Grid = styled.div`
   display: grid;
   align-items: center;
