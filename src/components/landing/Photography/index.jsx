@@ -13,7 +13,7 @@ export const Photography = () => (
       <Grid>
         {photos.map(photo => (
           <a className={`item-${photo.id}`} key={photo.id} href={photo.link}>
-            <Photo src={photo.image} />
+            <Photo src={photo.image} alt="Maksymilian Grela Photography" />
           </a>
         ))}
       </Grid>

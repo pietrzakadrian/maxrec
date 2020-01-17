@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-color: #151515;
 
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   @media (max-width: 1960px) {
     padding: 9rem 4rem 6rem;
   }

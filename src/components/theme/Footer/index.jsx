@@ -3,6 +3,7 @@ import { Container } from 'components/common';
 import social from 'components/theme/Footer/social';
 import { Wrapper, Flex, Links, Details } from 'components/theme/Footer/styles';
 import logo from 'assets/logos/masylogofont.png';
+import pietrzakadrian from 'assets/logos/pietrzakadrian.png';
 import NavbarLinks from '../Header/NavbarLinks';
 
 export const Footer = () => (
@@ -23,8 +24,12 @@ export const Footer = () => (
           <div style={{ fontSize: 14, marginBottom: '0.4rem' }}>Maksymilian Grela</div>
           <div style={{ fontSize: 14, marginBottom: '0.4rem' }}>Warszawa, Polska</div>
           <br />
-          <div style={{ fontSize: 14, marginBottom: '0.4rem' }}>Tel: 664 205 145</div>
-          <div style={{ fontSize: 14, marginBottom: '0.4rem' }}>Email: kontakt@maxrec.pl</div>
+          <div style={{ fontSize: 14, marginBottom: '0.4rem' }}>
+            Tel: <a href="tel:664 205 145">664 205 145</a>
+          </div>
+          <div style={{ fontSize: 14, marginBottom: '0.4rem' }}>
+            Email: <a href="mailto:kontakt@maxrec.pl">kontakt@maxrec.pl</a>
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +47,10 @@ export const Footer = () => (
             marginTop: 3,
           }}
         >
-          © {new Date().getFullYear()} All rights reserved | Made by Adrian Pietrzak
+          <span>
+            © {new Date().getFullYear()} All rights reserved | Made by{' '}
+            <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
+          </span>
         </div>
       </div>
 
