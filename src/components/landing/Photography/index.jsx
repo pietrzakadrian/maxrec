@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container } from 'components/common';
-import { Image } from 'components/common/Image';
-import { photos } from 'components/common/Photo/photos';
-import { Photo } from 'components/common/Photo';
+import { photos } from 'components/landing/Photography/photos';
 import { H2 } from 'components/common/Typography';
 import { Wrapper, PhotographyWrapper, Grid } from './styles';
 
@@ -14,7 +12,7 @@ export const Photography = () => (
       <Grid>
         {photos.map(photo => (
           <a className={`item-${photo.id}`} key={photo.id} href={photo.link}>
-            <Photo src={photo.image} alt="Maksymilian Grela Photography" />
+            <img src={photo.image} alt="Maksymilian Grela Photography" />
           </a>
         ))}
       </Grid>

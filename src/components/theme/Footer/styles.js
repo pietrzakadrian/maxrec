@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-color: #151515;
   position: relative;
+  z-index: 10;
 
   a {
     text-decoration: none;
@@ -23,7 +24,7 @@ export const Wrapper = styled.div`
 export const Flex = styled.div`
   display: flex;
   color: #fff;
-  font-family: 'GothamBook';
+  font-family: 'GothamLight';
   line-height: 20px;
   margin-bottom: 50px;
 

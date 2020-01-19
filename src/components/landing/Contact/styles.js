@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   padding: 4rem 0;
   position: relative;
   background: #fff;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     width: 100%;

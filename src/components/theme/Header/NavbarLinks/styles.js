@@ -55,7 +55,7 @@ export const Wrapper = styled.div`
 					color: #fff;
 					text-transform: initial;
 					font-size: 2.188rem;
-					font-family: 'GothamBook';
+					font-family: 'GothamLight';
 
 					&:last-child {
 							margin-bottom: unset;

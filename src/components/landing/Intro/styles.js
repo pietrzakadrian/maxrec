@@ -3,16 +3,14 @@ import overlayIllustration from 'assets/illustrations/header.jpg';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
+  height: 100vh;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
   background-image: url(${overlayIllustration});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-
-  @media screen and (min-width: 768px) {
-    position: sticky;
-    top: 0;
-  }
 `;
 
 export const IntroWrapper = styled.div`
@@ -90,12 +88,12 @@ export const Center = styled.div`
 
 export const Bottom = styled.div`
   position: absolute;
-  bottom: 10%;
+  bottom: 12.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 190px;
 
   @media screen and (min-width: 768px) {
-    width: 220px;
+    width: 230px;
   }
 `;

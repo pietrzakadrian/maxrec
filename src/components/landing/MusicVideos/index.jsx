@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Container, Card } from 'components/common';
-import YouTube from 'react-youtube';
-import { Image } from 'components/common/Image';
-import { musicVideos } from 'components/common/MusicVideo/music-videos';
+import React from 'react';
+import { Container } from 'components/common';
+import { musicVideos } from 'components/landing/MusicVideos/music-videos';
 import { YouTubeToggle } from 'components/common/YouTubeToggle';
 import { H2 } from 'components/common/Typography';
 import { Wrapper, Grid, MusicVideosWrapper } from './styles';

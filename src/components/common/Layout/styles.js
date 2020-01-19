@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import { media } from 'utils';
 
 export const Global = createGlobalStyle`
   html {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'GothamLight', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
@@ -455,7 +456,7 @@ export const Global = createGlobalStyle`
       display: flex;
     }
 
-    @media screen and (min-width: 768px) {
+    ${media.tabletViewportWidth`
       iframe {
         margin-left: 0;
         margin-right: 0;
@@ -467,7 +468,9 @@ export const Global = createGlobalStyle`
         margin-bottom: 0;
         display: flex;
       }
-    }
+    `}
+
+
     hr {
       margin-left: 0;
       margin-right: 0;
@@ -619,7 +622,7 @@ export const Global = createGlobalStyle`
       background: #fff;
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', Helvetica, sans-serif;
+      font-family: 'GothamLight', Helvetica, sans-serif;
       color: hsla(0, 0%, 0%, 0.8);
       font-weight: normal;
       word-wrap: break-word;

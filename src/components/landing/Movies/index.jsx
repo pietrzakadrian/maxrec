@@ -1,8 +1,6 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Container, Card } from 'components/common';
-import { movies } from 'components/common/Movie/movies';
-import { Image } from 'components/common/Image';
+import { Container } from 'components/common';
+import { movies } from 'components/landing/Movies/movies';
 import { YouTubeToggle } from 'components/common/YouTubeToggle';
 import { H2 } from 'components/common/Typography';
 import { Wrapper, Grid, Item, Content, Stats, MoviesWrapper } from './styles';
