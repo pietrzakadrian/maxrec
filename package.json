@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "MAXREC | Maksymilian Grela",
   "private": true,
-  "description": "Personal Single Page Application using Gatsby.js with styled-components",
-  "version": "0.0.1",
+  "description": "film, teledysk, zdjęcia, sesja, fotografia, Warszawa, Polska, reklama, usługi foto i wideo",
+  "version": "1.0.0",
   "author": "Adrian Pietrzak <contact@pietrzakadrian.com>",
   "dependencies": {
     "dotenv": "^6.2.0",
@@ -35,9 +35,7 @@
     "yup": "^0.26.6"
   },
   "keywords": [
-    "gatsby",
-    "portfolio",
-    "developer"
+    "gatsby"
   ],
   "license": "MIT",
   "scripts": {
@@ -65,9 +63,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:smakosh/gatsby-portfolio-dev.git"
-  },
-  "bugs": {
-    "url": "https://github.com/smakosh/gatsby-portfolio-dev/issues"
+    "url": "git@github.com:pietrzakadrian/maxrec.git"
   }
 }
