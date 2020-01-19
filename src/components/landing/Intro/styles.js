@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     position: sticky;
     top: 0;
-    height: 94vh;
   }
 `;
 
@@ -83,11 +82,15 @@ export const Center = styled.div`
   transform: translateY(-50%);
   right: 0;
   left: 0;
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(-60%);
+  }
 `;
 
 export const Bottom = styled.div`
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 190px;

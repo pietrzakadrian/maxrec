@@ -5,6 +5,7 @@ import { Container, Button } from 'components/common';
 import logo from 'assets/logos/max_rec_white.png';
 import social from 'components/theme/Footer/social';
 import { Links } from 'components/theme/Footer/styles';
+import { Parallax } from 'react-scroll-parallax';
 import { Wrapper, IntroWrapper, Bottom, Thumbnail, Center } from './styles';
 
 export const Intro = () => (

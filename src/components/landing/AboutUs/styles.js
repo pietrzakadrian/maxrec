@@ -16,4 +16,9 @@ export const AboutUsWrapper = styled.div`
   font-family: GothamLight;
   font-size: 15px;
   letter-spacing: 0.6px;
+
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
