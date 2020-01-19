@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
     display: block;
   }
 
+  @media screen and (min-width: 768px) {
+    top: 2.9rem;
+    right: 2.9rem;
+  }
+
   ${({ sidebar }) =>
     sidebar &&
     `

@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
 
 export const IntroWrapper = styled.div`
   padding: 4rem 0;
-  // display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -56,6 +55,7 @@ export const Thumbnail = styled.div`
   img {
     width: 85%;
     height: auto;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 768px) {
@@ -68,5 +68,25 @@ export const Thumbnail = styled.div`
     img {
       width: 700px;
     }
+  }
+`;
+
+export const Center = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+`;
+
+export const Bottom = styled.div`
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
   }
 `;

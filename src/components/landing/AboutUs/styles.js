@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 4rem 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 500px;
+`;
 
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+export const AboutUsWrapper = styled.div`
+  text-align: center;
+  font-family: GothamLight;
+  font-size: 15px;
+  letter-spacing: 0.6px;
 `;

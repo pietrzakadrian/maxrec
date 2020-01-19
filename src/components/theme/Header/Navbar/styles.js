@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     a {
       display: inline-block;
+      font-weight: 700;
     }
   }
 `;

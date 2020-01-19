@@ -442,16 +442,31 @@ export const Global = createGlobalStyle`
       padding-top: 0;
       margin-bottom: 1.45rem;
     }
+
     iframe {
       margin-left: 0;
       margin-right: 0;
-      margin-top: 0;
+      margin-top: 20px;
       padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 20px;
       display: flex;
+    }
+
+    @media screen and (min-width: 768px) {
+      iframe {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        display: flex;
+      }
     }
     hr {
       margin-left: 0;

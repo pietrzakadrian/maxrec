@@ -48,4 +48,8 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1259px) {
+    grid-template-columns: repeat(3, 300px);
+  }
 `;

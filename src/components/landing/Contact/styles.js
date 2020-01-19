@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 4rem 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   max-width: 500px;
 
   @media (max-width: 960px) {
@@ -47,4 +44,11 @@ export const Thumbnail = styled.div`
   img {
     width: 100%;
   }
+`;
+
+export const Typography = styled.div`
+  text-align: center;
+  font-family: 'GothamLight';
+  font-size: 14px;
+  margin: 15px 0 30px;
 `;

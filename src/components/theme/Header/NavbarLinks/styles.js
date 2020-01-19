@@ -4,13 +4,13 @@ export const Wrapper = styled.div`
   a {
     color: #6d6d6d;
     text-decoration: none;
-    text-transform: uppercase;
+	text-transform: uppercase;
   }
 
   ${({ footer }) =>
     footer &&
     `
-		  display: flex;
+		  display: flex!important;
 		  flex-direction: column;
 		
 		  a {

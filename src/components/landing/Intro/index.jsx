@@ -6,40 +6,31 @@ import logo from 'assets/logos/max_rec_white.png';
 import social from 'components/theme/Footer/social';
 import { Links } from 'components/theme/Footer/styles';
 
-import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import { Wrapper, IntroWrapper, Bottom, Thumbnail, Center } from './styles';
 
 export const Intro = () => (
   <Wrapper>
     <Header />
     <IntroWrapper as={Container}>
-      <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: 0, left: 0 }}>
+      <Center>
         <Thumbnail>
-          <img style={{ marginBottom: 50 }} src={logo} alt="MAXREC Maksymilian Grela" />
+          <img src={logo} alt="MAXREC Maksymilian Grela" />
         </Thumbnail>
 
         <Button transparent="true" as={AnchorLink} href="#about-us">
           Rozpocznij
         </Button>
-      </div>
+      </Center>
 
-      <div
-        style={{ position: 'absolute', bottom: '5%', left: '50%', transform: 'translateX(-50%)', width: 190 || 250 }}
-      >
+      <Bottom>
         <Links>
           {social.map(({ id, name, link, icon }) => (
-            <a
-              style={{ display: 'flex' }}
-              key={id}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`follow me on ${name}`}
-            >
+            <a style={{ display: 'flex' }} key={id} href={link} target="_blank" rel="noopener noreferrer">
               <img width="35" src={icon} alt={name} />
             </a>
           ))}
         </Links>
-      </div>
+      </Bottom>
     </IntroWrapper>
   </Wrapper>
 );

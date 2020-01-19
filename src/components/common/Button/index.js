@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   cursor: pointer;
-  padding: 0.9rem 2.5rem;
+  padding: 1.1rem 2.5rem;
   border: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
@@ -32,9 +32,11 @@ export const Button = styled.button`
     font-size: 13px;
     width: 100%;
     padding: 16px 0 14px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
 
     &:hover {
-      background: #151515;
+      background: #353535;
     }
   `};
 
@@ -45,10 +47,10 @@ export const Button = styled.button`
     border: 1.8px solid #fff;
     background-color: transparent;
     text-transform: uppercase;
-    font-family: 'GothamBook';
-    padding-top: 24px;
-    font-size: 12px;
-    letter-spacing: 1.1px;
+    font-family: 'GothamLight';
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 1.7px;
 
     &:hover {
       border: 1.8px solid #cb2027;
@@ -56,9 +58,5 @@ export const Button = styled.button`
       opacity: 1;
     }
 
-    @media screen and (min-width: 768px) {
-      padding-top: 24px;
-      font-size: 14px;
-    }
   `};
 `;

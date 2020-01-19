@@ -5,23 +5,29 @@ export const Wrapper = styled.div`
 `;
 
 export const MoviesWrapper = styled.div`
-  display: flex;
-  justify-content: space-around;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 `;
 
 export const Grid = styled.div`
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 380px);
-  grid-template-rows: 8fr;
-  gap: 1.2rem 1.2rem;
+  grid-template-columns: 1fr;
 
-  @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 768px) {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 8fr;
+    gap: 0rem 1.2rem;
+    grid-template-columns: repeat(2, 340px);
   }
 
-  @media (max-width: 680px) {
-    grid-template-columns: 1fr;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  @media screen and (min-width: 1260px) {
+    grid-template-columns: repeat(3, 380px);
   }
 `;
 

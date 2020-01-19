@@ -4,6 +4,7 @@ export const Error = styled.span`
   color: #ff4136;
   font-size: 13px;
   font-family: 'GothamLight';
+  letter-spacing: 0.5px;
 `;
 
 export const Center = styled.div`

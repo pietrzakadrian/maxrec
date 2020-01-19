@@ -10,7 +10,7 @@ export const Input = styled.input`
   margin-bottom: 0.1rem;
   transition: 0.3s;
   font-family: 'GothamLight';
-  letter-spacing: 0.1px;
+  letter-spacing: 0.7px;
   font-size: 14px;
 
   ${({ error }) =>
