@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-color: #151515;
+  position: relative;
 
   a {
     text-decoration: none;

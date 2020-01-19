@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/background2.jpg';
+import overlayIllustration from 'assets/illustrations/header.jpg';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -8,6 +8,12 @@ export const Wrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+
+  @media screen and (min-width: 768px) {
+    position: sticky;
+    top: 0;
+    height: 94vh;
+  }
 `;
 
 export const IntroWrapper = styled.div`

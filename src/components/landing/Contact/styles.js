@@ -2,11 +2,18 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 4rem 0;
-  max-width: 500px;
+  position: relative;
+  background: #fff;
 
-  @media (max-width: 960px) {
-    flex-direction: column;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 100%;
   }
+`;
+
+export const ContactFormWrapper = styled.div`
+  max-width: 500px;
+  margin: 0 auto;
 `;
 
 export const Details = styled.div`

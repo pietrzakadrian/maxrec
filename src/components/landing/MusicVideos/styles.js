@@ -2,6 +2,13 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
+  background: #fff;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 export const MusicVideosWrapper = styled.div`
@@ -23,6 +30,7 @@ export const Grid = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
+    gap: 1.2rem 1.2rem;
     grid-template-columns: repeat(3, 300px);
   }
 

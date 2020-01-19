@@ -2,11 +2,23 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
+  background: #fff;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 export const PhotographyWrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const Grid = styled.div`

@@ -616,6 +616,7 @@ export const Global = createGlobalStyle`
       }
     }
     body {
+      background: #fff;
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
