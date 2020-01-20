@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'components/common';
 import social from 'components/theme/Footer/social';
 import {
   Wrapper,
@@ -12,14 +11,12 @@ import {
   FooterWrapper,
   Copyright,
 } from 'components/theme/Footer/styles';
-import logo from 'assets/logos/masylogofont.png';
-import pietrzakadrian from 'assets/logos/pietrzakadrian.png';
 import NavbarLinks from '../Header/NavbarLinks';
 
 export const Footer = () => (
   <Wrapper>
     <Flex>
-      <Col style={{ width: 280 }}>
+      <Col>
         <Heading>Mapa</Heading>
 
         <div>
@@ -46,10 +43,10 @@ export const Footer = () => (
 
     <FooterWrapper>
       <Copyright>
-        <span>
-          © {new Date().getFullYear()} All rights reserved | Made by{' '}
-          <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
-        </span>
+        <div>© {new Date().getFullYear()} All rights reserved</div>
+        <div>
+          <a href="#">Polityka prywatności</a> | Made by <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
+        </div>
       </Copyright>
 
       <LinksWrapper>

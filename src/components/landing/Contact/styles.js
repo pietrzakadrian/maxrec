@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 4rem 0;
@@ -6,10 +7,10 @@ export const Wrapper = styled.div`
   background: #fff;
   z-index: 10;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 100%;
     max-width: 100%;
-  }
+  `}
 `;
 
 export const ContactFormWrapper = styled.div`

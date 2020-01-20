@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -6,10 +7,10 @@ export const Wrapper = styled.div`
   position: relative;
   z-index: 10;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 100%;
     max-width: 100%;
-  }
+  `}
 `;
 
 export const PhotographyWrapper = styled.div`
@@ -17,9 +18,9 @@ export const PhotographyWrapper = styled.div`
   justify-content: space-around;
   margin: 0 auto;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 90%;
-  }
+  `}
 `;
 
 export const Grid = styled.div`
@@ -29,7 +30,7 @@ export const Grid = styled.div`
   grid-template-rows: 8fr;
   gap: 1.2rem 1.2rem;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     a {
       &:last-child {
         display: none;
@@ -44,15 +45,15 @@ export const Grid = styled.div`
         min-width: 100%;
       }
     }
-  }
+  `}
 
-  @media screen and (min-width: 1024px) {
+  ${media.tabletLandscapeViewportWidth`
     a {
       &:last-child {
         display: block;
       }
     }
-  }
+  `}
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);

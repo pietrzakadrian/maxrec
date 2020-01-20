@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors, media } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 3rem 0 1.5rem;
@@ -10,15 +11,20 @@ export const Wrapper = styled.div`
   font-size: 14px;
 
   a {
-    color: #fff;
+    color: ${colors.white};
     text-transform: uppercase;
+    font-weight: 700;
     display: none;
-  }
 
-  @media screen and (min-width: 768px) {
-    a {
-      display: inline-block;
-      font-weight: 700;
+    img {
+      width: 205px;
+      height: auto;
     }
   }
+
+  ${media.tabletViewportWidth`
+    a {
+      display: inline-block;
+    }
+  `}
 `;

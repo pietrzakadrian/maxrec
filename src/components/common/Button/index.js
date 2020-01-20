@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from 'utils';
 
 export const Button = styled.button`
   cursor: pointer;
@@ -11,7 +12,7 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
+  color: ${colors.white};
   background: #cb2027;
   transition: 0.3s;
 
@@ -26,7 +27,7 @@ export const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     `
-    background: #000;
+    background: ${colors.black};
     text-transform: uppercase;
     font-family: 'GothamLight';
     font-size: 13px;

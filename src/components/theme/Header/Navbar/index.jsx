@@ -8,7 +8,7 @@ import { Wrapper } from './styles';
 const Navbar = () => (
   <Wrapper as={Container}>
     <Link to="/">
-      <img src={logo} style={{ width: 205 }} alt="Maksymilian Grela" />
+      <img src={logo} alt="Maksymilian Grela" />
     </Link>
     <NavbarLinks desktop />
   </Wrapper>

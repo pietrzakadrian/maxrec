@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors, media } from 'utils';
 
 export const Wrapper = styled.div`
   z-index: 5;
@@ -13,10 +14,10 @@ export const Wrapper = styled.div`
     display: block;
   }
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     top: 2.9rem;
     right: 2.9rem;
-  }
+  `}
 
   ${({ sidebar }) =>
     sidebar &&
@@ -31,7 +32,7 @@ export const Bar = styled.div`
 	width: 1.6rem;
 	height: .15rem;
 	margin-bottom: .3rem;
-	background-color: #fff;
+	background-color: ${colors.white};
 	transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
 	opacity 500ms,
 	box-shadow 250ms,

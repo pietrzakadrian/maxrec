@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from 'utils';
 
 export const Wrapper = styled.div`
   a {
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
 		
 		  a {
 				text-transform: initial;
-				color: #fff;
+				color: ${colors.white};
 				font-size: 14px;
 				margin-bottom: 0.4rem;
 
@@ -52,7 +53,7 @@ export const Wrapper = styled.div`
 
 			a {
 					line-height: 70px;
-					color: #fff;
+					color: ${colors.white};
 					text-transform: initial;
 					font-size: 2.188rem;
 					font-family: 'GothamLight';

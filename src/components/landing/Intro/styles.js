@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/header.jpg';
+import { media } from 'utils';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -61,17 +62,17 @@ export const Thumbnail = styled.div`
     margin-bottom: 50px;
   }
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     img {
       width: 500px;
     }
-  }
+  `}
 
-  @media screen and (min-width: 1024px) {
+  ${media.tabletLandscapeViewportWidth`
     img {
       width: 700px;
     }
-  }
+  `}
 `;
 
 export const Center = styled.div`
@@ -81,19 +82,21 @@ export const Center = styled.div`
   right: 0;
   left: 0;
 
-  @media screen and (min-width: 768px) {
-    transform: translateY(-60%);
-  }
+  ${media.tabletViewportWidth`
+    img {
+      transform: translateY(-60%);
+    }
+  `}
 `;
 
 export const Bottom = styled.div`
-  position: absolute;
+  poon: absolute;
   bottom: 12.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 190px;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 230px;
-  }
+  `}
 `;

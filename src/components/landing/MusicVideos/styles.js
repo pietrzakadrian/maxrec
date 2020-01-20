@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors, media } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -6,10 +7,10 @@ export const Wrapper = styled.div`
   position: relative;
   z-index: 10;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 100%;
     max-width: 100%;
-  }
+  `}
 `;
 
 export const MusicVideosWrapper = styled.div`
@@ -74,7 +75,7 @@ export const Stats = styled.div`
     }
 
     span {
-      color: #000;
+      color: ${colors.black};
       margin-left: 0.5rem;
     }
   }

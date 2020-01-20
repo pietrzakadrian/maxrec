@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { media } from 'utils';
+import { media, colors } from 'utils';
 
 export const Global = createGlobalStyle`
   html {
@@ -65,7 +65,7 @@ export const Global = createGlobalStyle`
     }
     mark {
       background-color: #ff0;
-      color: #000;
+      color: ${colors.black};
     }
     small {
       font-size: 80%;

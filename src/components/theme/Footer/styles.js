@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/background2.jpg';
+import { colors, media } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 5rem 4rem 4rem;
@@ -13,50 +14,50 @@ export const Wrapper = styled.div`
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: ${colors.white};
   }
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     padding: 9rem 4rem 6rem;
-  }
+  `}
 `;
 
 export const Flex = styled.div`
   display: flex;
-  color: #fff;
+  color: ${colors.white};
   font-family: 'GothamLight';
   line-height: 20px;
   margin-bottom: 50px;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     margin-bottom: 105px;
-  }
+  `}
 `;
 
 export const Col = styled.div`
-  width: 100%;
+  width%;
 
   &:first-child {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 250px;
+  ${media.tabletViewportWidth`
+    max-width: 280px;
 
     &:first-child {
       display: block;
     }
-  }
+  `}
 `;
 
 export const LinksWrapper = styled.div`
   margin: 0 auto;
   width: 200px;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     margin: 0;
     width: 220px;
-  }
+  `}
 `;
 
 export const Heading = styled.div`
@@ -67,26 +68,26 @@ export const Heading = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  `}
 `;
 
 export const Copyright = styled.div`
   display: flex;
   align-items: center;
-  color: #fff;
+  color: ${colors.white};
   font-size: 13px;
   letter-spacing: 0.8px;
   font-family: 'GothamLight';
   margin-bottom: 30px;
   margin-top: 3px;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     margin-bottom: 0;
-  }
+  `}
 `;
 
 export const Description = styled.div`
@@ -105,6 +106,7 @@ export const Links = styled.div`
 
   a {
     transition: 0.3s;
+    display: flex;
 
     &:hover {
       opacity: 0.5;
@@ -115,11 +117,11 @@ export const Links = styled.div`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     a {
       img {
         margin: 0;
       }
     }
-  }
+  `}
 `;

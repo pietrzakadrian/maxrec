@@ -24,7 +24,7 @@ export const Intro = () => (
       <Bottom>
         <Links>
           {social.map(({ id, name, link, icon }) => (
-            <a style={{ display: 'flex' }} key={id} href={link} target="_blank" rel="noopener noreferrer">
+            <a key={id} href={link} target="_blank" rel="noopener noreferrer">
               <img width="35" src={icon} alt={name} />
             </a>
           ))}

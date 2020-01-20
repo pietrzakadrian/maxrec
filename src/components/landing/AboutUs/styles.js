@@ -1,15 +1,16 @@
 import styled from 'styled-components';
+import { colors, media } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 4rem 0;
-  background: #fff;
+  background: ${colors.white};
   position: relative;
   z-index: 10;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 100%;
     max-width: 100%;
-  }
+  `}
 `;
 
 export const AboutUsWrapper = styled.div`
@@ -18,8 +19,8 @@ export const AboutUsWrapper = styled.div`
   font-size: 15px;
   letter-spacing: 0.6px;
 
-  @media screen and (min-width: 768px) {
+  ${media.tabletViewportWidth`
     width: 90%;
     margin: 0 auto;
-  }
+  `}
 `;
