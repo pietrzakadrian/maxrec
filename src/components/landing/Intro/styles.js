@@ -90,7 +90,7 @@ export const Center = styled.div`
 `;
 
 export const Bottom = styled.div`
-  poon: absolute;
+  position: absolute;
   bottom: 12.5%;
   left: 50%;
   transform: translateX(-50%);

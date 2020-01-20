@@ -43,9 +43,11 @@ export const Footer = () => (
 
     <FooterWrapper>
       <Copyright>
-        <div>© {new Date().getFullYear()} All rights reserved</div>
         <div>
-          <a href="#">Polityka prywatności</a> | Made by <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
+          © {new Date().getFullYear()} All rights reserved |{' '}
+          <a href="#">
+            Polityka prywatności | Made by <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
+          </a>
         </div>
       </Copyright>
 

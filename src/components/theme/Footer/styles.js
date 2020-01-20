@@ -35,7 +35,7 @@ export const Flex = styled.div`
 `;
 
 export const Col = styled.div`
-  width%;
+  width: 100%;
 
   &:first-child {
     display: none;
@@ -118,10 +118,10 @@ export const Links = styled.div`
   }
 
   ${media.tabletViewportWidth`
-    a {
-      img {
-        margin: 0;
-      }
+  a {
+    img {
+      margin: 0;
     }
+  }
   `}
 `;
