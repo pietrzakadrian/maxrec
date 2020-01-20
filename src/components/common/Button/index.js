@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from 'utils';
+import { colors, media } from 'utils';
 
 export const Button = styled.button`
   cursor: pointer;
@@ -58,6 +58,5 @@ export const Button = styled.button`
       color: #cb2027;
       opacity: 1;
     }
-
   `};
 `;

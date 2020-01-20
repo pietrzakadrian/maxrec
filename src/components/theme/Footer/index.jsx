@@ -1,5 +1,6 @@
 import React from 'react';
 import social from 'components/theme/Footer/social';
+
 import {
   Wrapper,
   Flex,
@@ -44,10 +45,13 @@ export const Footer = () => (
     <FooterWrapper>
       <Copyright>
         <div>
-          © {new Date().getFullYear()} All rights reserved |{' '}
-          <a href="#">
-            Polityka prywatności | Made by <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
-          </a>
+          <span>© {new Date().getFullYear()} All rights reserved</span>{' '}
+          <span>
+            <a href="#">Polityka prywatności</a>
+          </span>{' '}
+          <span>
+            Made by <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>
+          </span>
         </div>
       </Copyright>
 

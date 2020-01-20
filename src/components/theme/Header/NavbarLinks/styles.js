@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 	`}
  }
 
-  ${({ desktop }) =>
+  ${({ desktop, footer }) =>
     desktop
       ? `
 			@media (max-width: 960px) {
@@ -36,6 +36,12 @@ export const Wrapper = styled.div`
 
 			a {
 					margin-right: 1.3rem;
+					transition: 0.3s;
+					font-weight: 700;
+
+					&:hover {
+						${!footer && 'color: #cb2027;'};
+					}
 
 					&:last-child {
 							margin-right: unset;
@@ -59,7 +65,7 @@ export const Wrapper = styled.div`
 					font-family: 'GothamLight';
 
 					&:last-child {
-							margin-bottom: unset;
+						margin-bottom: unset;
 					}
 			}
 	`}

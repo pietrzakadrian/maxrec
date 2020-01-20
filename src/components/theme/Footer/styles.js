@@ -84,9 +84,23 @@ export const Copyright = styled.div`
   font-family: 'GothamLight';
   margin-bottom: 30px;
   margin-top: 3px;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    display: block;
+    margin-bottom: 2.5px;
+  }
 
   ${media.tabletViewportWidth`
     margin-bottom: 0;
+    text-align: left;
+
+    span {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
   `}
 `;
 

@@ -5,7 +5,7 @@ import { media } from 'utils';
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   height: 100vh;
-  z-index: 2;
+  z-index: ${props => (props.sidebar ? '5' : '2')};
   position: fixed;
   width: 100%;
   background-image: url(${overlayIllustration});
@@ -59,7 +59,6 @@ export const Thumbnail = styled.div`
   img {
     width: 85%;
     height: auto;
-    margin-bottom: 50px;
   }
 
   ${media.tabletViewportWidth`
@@ -82,16 +81,20 @@ export const Center = styled.div`
   right: 0;
   left: 0;
 
+  img {
+    transform: translateY(-50%);
+  }
+
   ${media.tabletViewportWidth`
     img {
-      transform: translateY(-60%);
+      transform: translateY(-35%);
     }
   `}
 `;
 
 export const Bottom = styled.div`
   position: absolute;
-  bottom: 12.5%;
+  bottom: 14.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 190px;

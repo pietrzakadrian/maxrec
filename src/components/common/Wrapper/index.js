@@ -4,6 +4,6 @@ export const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   transform: translateY(100vh);
-  z-index: 40;
+  z-index: 2;
   background: #fff;
 `;
