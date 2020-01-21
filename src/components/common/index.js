@@ -1,6 +1,7 @@
 export * from './Layout';
 export * from './Container';
 export * from './Button';
+export * from './Grid';
 export * from './Input';
 export * from './SEO';
 export * from './Typography';

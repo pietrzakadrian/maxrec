@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container } from 'components/common';
-import { H2 } from 'components/common/Typography';
-import { Wrapper, Details, Typography, ContactFormWrapper } from './styles';
+import { H2, Container, ComponentWrapper } from 'components/common';
+import { Details, Typography, ContactFormWrapper } from './styles';
 import ContactForm from './ContactForm';
 
 export const Contact = () => (
-  <Wrapper as={Container} id="contact">
+  <ComponentWrapper as={Container} id="contact">
     <H2>Kontakt</H2>
 
     <Details>
@@ -17,5 +16,5 @@ export const Contact = () => (
         <ContactForm />
       </ContactFormWrapper>
     </Details>
-  </Wrapper>
+  </ComponentWrapper>
 );

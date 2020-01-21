@@ -35,6 +35,7 @@ export const Button = styled.button`
     padding: 16px 0 14px;
     letter-spacing: 0.5px;
     transition: 0.3s;
+    font-weight: 700;
 
     &:hover {
       background: #353535;
@@ -45,6 +46,7 @@ export const Button = styled.button`
     transparent &&
     `
     opacity: .7;
+    
     border: 1.8px solid #fff;
     background-color: transparent;
     text-transform: uppercase;

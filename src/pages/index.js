@@ -1,22 +1,22 @@
 import React from 'react';
-import { Layout, SEO, Wrapper } from 'components/common';
-import { Intro, Photography, Contact, MusicVideos, Movies, AboutUs } from 'components/landing';
-import { Footer } from 'components/theme';
+import { Layout, SEO, ContainerWrapper } from 'components/common';
+import { Intro, Photography, Contact, MusicVideos, Movies, AboutUs, Footer } from 'components/theme';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default () => (
-  <ParallaxProvider>
-    <Layout>
-      <SEO />
+  <Layout>
+    <SEO />
+    <ParallaxProvider>
       <Intro />
-      <Wrapper>
-        <AboutUs />
-        <MusicVideos />
-        <Movies />
-        <Photography />
-        <Contact />
-        <Footer />
-      </Wrapper>
-    </Layout>
-  </ParallaxProvider>
+    </ParallaxProvider>
+
+    <ContainerWrapper>
+      <AboutUs />
+      <MusicVideos />
+      <Movies />
+      <Photography />
+      <Contact />
+      <Footer />
+    </ContainerWrapper>
+  </Layout>
 );

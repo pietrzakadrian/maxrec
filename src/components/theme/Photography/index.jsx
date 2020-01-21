@@ -1,21 +1,20 @@
 import React from 'react';
-import { Container } from 'components/common';
-import { photos } from 'components/landing/Photography/photos';
+import { ComponentWrapper, Container, PhotoGrid, PhotoWrapper } from 'components/common';
+import { photos } from 'components/theme/Photography/photos';
 import { H2 } from 'components/common/Typography';
-import { Wrapper, PhotographyWrapper, Grid } from './styles';
 
 export const Photography = () => (
-  <Wrapper as={Container} id="photography">
+  <ComponentWrapper as={Container} id="photography">
     <H2>Fotografia</H2>
 
-    <PhotographyWrapper>
-      <Grid>
+    <PhotoWrapper>
+      <PhotoGrid>
         {photos.map(photo => (
           <a className={`item-${photo.id}`} key={photo.id} href={photo.link}>
             <img src={photo.image} alt="Maksymilian Grela Photography" />
           </a>
         ))}
-      </Grid>
-    </PhotographyWrapper>
-  </Wrapper>
+      </PhotoGrid>
+    </PhotoWrapper>
+  </ComponentWrapper>
 );

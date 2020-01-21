@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-color: #151515;
   position: relative;
-  z-index: 10;
 
   a {
     text-decoration: none;
@@ -65,6 +64,7 @@ export const Heading = styled.div`
   padding: 0 0 30px;
   letter-spacing: 1.4px;
   font-size: 17px;
+  font-weight: 700;
 `;
 
 export const FooterWrapper = styled.div`
@@ -76,6 +76,7 @@ export const FooterWrapper = styled.div`
 `;
 
 export const Copyright = styled.div`
+  font-weight: 700;
   display: flex;
   align-items: center;
   color: ${colors.white};
@@ -106,6 +107,7 @@ export const Copyright = styled.div`
 
 export const Description = styled.div`
   font-size: 14px;
+  font-weight: 700;
 
   div {
     margin-bottom: 0.4rem;

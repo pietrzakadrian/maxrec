@@ -60,4 +60,5 @@ export const Typography = styled.div`
   font-family: 'GothamLight';
   font-size: 14px;
   margin: 15px 0 30px;
+  font-weight: 700;
 `;

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container } from 'components/common';
+import { Container, ComponentWrapper } from 'components/common';
 import { H2 } from 'components/common/Typography';
 import { Wrapper, AboutUsWrapper } from './styles';
 
 export const AboutUs = () => (
-  <Wrapper as={Container} id="about-us">
+  <ComponentWrapper large as={Container} id="about-us">
     <H2>O nas</H2>
 
     <AboutUsWrapper>
@@ -18,5 +18,5 @@ export const AboutUs = () => (
         Zlecenia wykonujemy głównie w Warszawie, lecz współpraca możliwa jest na terenie całej Polski.
       </span>
     </AboutUsWrapper>
-  </Wrapper>
+  </ComponentWrapper>
 );

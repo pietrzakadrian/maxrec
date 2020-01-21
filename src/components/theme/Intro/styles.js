@@ -5,7 +5,7 @@ import { media } from 'utils';
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   height: 100vh;
-  z-index: ${props => (props.sidebar ? '5' : '2')};
+  z-index: ${({ sidebar }) => (sidebar ? '5' : '2')};
   position: fixed;
   width: 100%;
   background-image: url(${overlayIllustration});
@@ -19,40 +19,6 @@ export const IntroWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-export const Details = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 36pt;
-    color: #212121;
-
-    @media (max-width: 680px) {
-      font-size: 30pt;
-    }
-  }
-
-  h4 {
-    margin-bottom: 2.5rem;
-    font-size: 32pt;
-    font-weight: normal;
-    color: #707070;
-
-    @media (max-width: 680px) {
-      font-size: 26pt;
-    }
-  }
 `;
 
 export const Thumbnail = styled.div`
