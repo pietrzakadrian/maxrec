@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/header.jpg';
 import { media } from 'utils';
+import { fadeIn } from 'utils/keyframes';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -19,6 +20,7 @@ export const IntroWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  animation: 1s ${fadeIn} ease-out;
 `;
 
 export const Thumbnail = styled.div`

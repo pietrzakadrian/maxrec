@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { fadeIn } from 'utils/keyframes';
 
 export const Wrapper = styled.div`
   background: transparent;
   width: 100%;
+  animation: 2s ${fadeIn} ease-out;
 `;
 
 export const Overlay = styled.div`
