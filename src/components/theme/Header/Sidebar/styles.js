@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { zIndex } from 'utils';
 
 export const Wrapper = styled.div`
   position: fixed;
-  z-index: 4;
+  z-index: ${zIndex.level4};
   overflow: auto;
   top: 0px;
   right: -275px;

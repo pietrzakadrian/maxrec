@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { media } from 'utils';
+import { media, zIndex } from 'utils';
 
 export const Wrapper = styled.div`
   padding: 4rem 0;
   position: relative;
   background: #fff;
-  z-index: 10;
+  z-index: ${zIndex.level10};
 
   ${media.tabletViewportWidth`
     width: 100%;

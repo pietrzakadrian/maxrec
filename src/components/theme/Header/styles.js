@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { fadeIn } from 'utils/keyframes';
+import { zIndex } from 'utils';
 
 export const Wrapper = styled.div`
   background: transparent;
@@ -19,6 +20,6 @@ export const Overlay = styled.div`
     sidebar &&
     `
 			display: block;
-			z-index: 4;	
+			z-index: ${zIndex.level4};	
 	`}
 `;

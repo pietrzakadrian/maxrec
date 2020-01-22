@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { colors, media } from 'utils';
+import { colors, media, zIndex } from 'utils';
 
 export const ContainerWrapper = styled.div`
   position: absolute;
   width: 100%;
   transform: translateY(100vh);
-  z-index: 2;
+  z-index: ${zIndex.level2};
   background: ${colors.white};
 `;
 
@@ -30,7 +30,7 @@ export const ComponentWrapper = styled.div`
   padding: ${({ large }) => (large ? '4rem 0' : '2rem 0')};
   background: ${colors.white};
   position: relative;
-  z-index: 10;
+  z-index: ${zIndex.level10};
 
   ${media.tabletViewportWidth`
     width: 100%;

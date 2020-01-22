@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/header.jpg';
-import { media } from 'utils';
+import { media, zIndex } from 'utils';
 import { fadeIn } from 'utils/keyframes';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   height: 100vh;
-  z-index: ${({ sidebar }) => (sidebar ? '5' : '2')};
+  z-index: ${({ sidebar }) => (sidebar ? zIndex.level5 : zIndex.level2)};
   position: fixed;
   width: 100%;
   background-image: url(${overlayIllustration});

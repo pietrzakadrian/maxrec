@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { colors, media } from 'utils';
+import { colors, media, zIndex } from 'utils';
 
 export const Wrapper = styled.div`
-  z-index: 5;
+  z-index: ${zIndex.level5};
   top: 1.6rem;
   right: 1.8rem;
   display: none;
