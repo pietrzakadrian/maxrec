@@ -37,3 +37,18 @@ export const ComponentWrapper = styled.div`
     max-width: 100%;
   `}
 `;
+
+export const StaticWrapper = styled.div``;
+
+export const TextWrapper = styled.div`
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
+  font-family: GothamLight;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+
+  ${media.tabletViewportWidth`
+    width: 90%;
+    margin: 0 auto;
+  `}
+`;

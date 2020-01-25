@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/header.jpg';
+import overlayIllustration from 'assets/illustrations/background3.jpg';
 import { media, zIndex } from 'utils';
 import { fadeIn } from 'utils/keyframes';
 

@@ -73,7 +73,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
     )}
     <Center>
       <Button secondary type="submit" disabled={isSubmitting}>
-        Wyślij wiadomość
+        {values.success ? 'wiadomość została wysłana' : 'Wyślij wiadomość'}
       </Button>
     </Center>
   </Form>
@@ -102,11 +102,10 @@ export default withFormik({
         Object.keys(data)
           .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
           .join('&');
-      await fetch('/?no-cache=1', {
+      await fetch('/contact/index.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({
-          'form-name': 'portfolio-dev',
           name,
           email,
           message,

@@ -4,6 +4,7 @@ import { media } from 'utils';
 export const VideoGrid = styled.div`
   grid-template-columns: 1fr;
 
+
   ${media.tabletViewportWidth`
     display: grid;
     align-items: center;

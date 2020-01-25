@@ -1,5 +1,6 @@
 import React from 'react';
 import social from 'components/theme/Footer/social';
+import { Link } from 'gatsby';
 
 import {
   Wrapper,
@@ -47,7 +48,7 @@ export const Footer = () => (
         <div>
           <span>© {new Date().getFullYear()} All rights reserved</span>{' '}
           <span>
-            <a href="#">Polityka prywatności</a>
+            <Link to="/privacy">Polityka prywatności</Link>
           </span>{' '}
           <span>
             Made by <a href="mailto:contact@pietrzakadrian.com">Adrian Pietrzak</a>

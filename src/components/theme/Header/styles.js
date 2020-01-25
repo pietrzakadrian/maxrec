@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { fadeIn } from 'utils/keyframes';
-import { zIndex } from 'utils';
+import { zIndex, colors } from 'utils';
 
 export const Wrapper = styled.div`
   background: transparent;

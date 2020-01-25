@@ -4,8 +4,8 @@ import Hamburger from './Hamburger';
 import Sidebar from './Sidebar';
 import { Wrapper, Overlay } from './styles';
 
-export const Header = ({ sidebar, toggle }) => (
-  <Wrapper>
+export const Header = ({ transparent, sidebar, toggle }) => (
+  <Wrapper transparent>
     <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
     <Navbar />
     <Hamburger sidebar={sidebar} toggle={toggle} />

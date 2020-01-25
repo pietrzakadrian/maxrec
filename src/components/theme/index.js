@@ -6,3 +6,4 @@ export * from './MusicVideos';
 export * from './Movies';
 export * from './Photography';
 export * from './Contact';
+export * from './Privacy';

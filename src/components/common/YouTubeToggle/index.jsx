@@ -15,6 +15,6 @@ export const YouTubeToggle = ({ video }) => {
   return selectedVideo !== video.id ? (
     <Image isHover="true" onClick={() => setVideo(video.id)} src={video.image} hover={video.hover} alt="thumbnail" />
   ) : (
-    <YouTube style={{ display: 'flex' }} opts={opts} videoId={video.link} />
+    <YouTube containerClassName="youtube__container" style={{ display: 'flex' }} opts={opts} videoId={video.link} />
   );
 };

@@ -642,5 +642,15 @@ export const Global = createGlobalStyle`
         outline: none;
       }
     }
+
+    .youtube__container {
+      height: 190px;
+    }
+
+    ${media.tabletViewportWidth`
+      .youtube__container {
+        height: 95%;
+      }
+    `}
   }
 `;
