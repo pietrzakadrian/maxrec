@@ -21,7 +21,11 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    background: gray;
+    background: ${colors.red};
+
+    &:hover {
+      cursor: default;
+    }
   }
 
   ${({ secondary }) =>

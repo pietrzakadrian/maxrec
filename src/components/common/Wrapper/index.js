@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors, media, zIndex } from 'utils';
 
-export const ContainerWrapper = styled.div`
+export const ContainerWrapper = styled.section`
   position: absolute;
   width: 100%;
   transform: translateY(100vh);
@@ -26,7 +26,7 @@ export const PhotoWrapper = styled.div`
   `}
 `;
 
-export const ComponentWrapper = styled.div`
+export const ComponentWrapper = styled.section`
   padding: ${({ large }) => (large ? '4rem 0' : '2rem 0')};
   background: ${colors.white};
   position: relative;
@@ -38,9 +38,7 @@ export const ComponentWrapper = styled.div`
   `}
 `;
 
-export const StaticWrapper = styled.div``;
-
-export const TextWrapper = styled.div`
+export const TextWrapper = styled.section`
   text-align: ${({ center }) => (center ? 'center' : 'left')};
   font-family: GothamLight;
   font-size: 15px;

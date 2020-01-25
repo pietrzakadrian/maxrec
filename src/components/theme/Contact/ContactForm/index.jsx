@@ -7,13 +7,7 @@ import { recaptcha_key } from 'data/config';
 import { Error, Center, InputField } from './styles';
 
 const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) => (
-  <Form
-    name="portfolio-dev"
-    method="post"
-    data-netlify="true"
-    data-netlify-recaptcha="true"
-    data-netlify-honeypot="bot-field"
-  >
+  <Form name="portfolio-dev" method="post">
     <InputField>
       <Input
         as={FastField}
@@ -64,15 +58,8 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
         <ErrorMessage component={Error} name="recaptcha" />
       </InputField>
     )}
-    {values.success && (
-      <InputField>
-        <Center>
-          <h4>Twoja wiadomość została wysłana.</h4>
-        </Center>
-      </InputField>
-    )}
     <Center>
-      <Button secondary type="submit" disabled={isSubmitting}>
+      <Button secondary type="submit" disabled={!!values.success}>
         {values.success ? 'wiadomość została wysłana' : 'Wyślij wiadomość'}
       </Button>
     </Center>
@@ -98,14 +85,10 @@ export default withFormik({
     }),
   handleSubmit: async ({ name, email, message, recaptcha }, { setSubmitting, resetForm, setFieldValue }) => {
     try {
-      const encode = data =>
-        Object.keys(data)
-          .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-          .join('&');
       await fetch('/contact/index.php', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
           name,
           email,
           message,
@@ -114,11 +97,9 @@ export default withFormik({
       });
       await setSubmitting(false);
       await setFieldValue('success', true);
-      setTimeout(() => resetForm(), 2000);
     } catch (err) {
       setSubmitting(false);
       setFieldValue('success', false);
-			alert('Something went wrong, please try again!') // eslint-disable-line
     }
   },
 })(ContactForm);

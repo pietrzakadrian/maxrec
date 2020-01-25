@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/background2.jpg';
 import { colors, media } from 'utils';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   padding: 5rem 4rem 4rem;
   background-image: url(${overlayIllustration});
   background-size: cover;
@@ -109,9 +109,11 @@ export const Description = styled.div`
   font-size: 14px;
   font-weight: 700;
 
-  div {
+  div,
+  h1 {
     margin-bottom: 0.4rem;
     letter-spacing: 0.5px;
+    font-size: 14px;
   }
 `;
 

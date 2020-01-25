@@ -1,6 +1,5 @@
 module.exports = {
   defaultTitle: 'MAXREC | Maksymilian Grela',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
   author: 'Maksymilian Grela',
   url: 'https://maxrec.pl',
   legalName: 'Maksymilian Grela',
@@ -13,5 +12,5 @@ module.exports = {
     phone: '664205145',
   },
   foundingDate: '2020',
-  recaptcha_key: '6LejotIUAAAAAJQ_O3piTsaOyLD5BPjgMHhH7kpy',
+  recaptcha_key: '6LcOo9IUAAAAAA-0fl-6zp9jSrwwAMsOVMXwtY6j',
 };

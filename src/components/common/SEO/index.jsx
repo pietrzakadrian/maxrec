@@ -24,12 +24,12 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
   return (
     <Helmet>
       <meta name="description" content={description} />
-      <meta name="image" content={maxrecfb} />
+      <meta name="image" content={`${url}${maxrecfb}`} />
       <meta property="og:url" content={`${url}${location}`} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={maxrecfb} />
+      <meta property="og:image" content={`${url}${maxrecfb}`} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <title>{title}</title>
       <html lang="pl" dir="ltr" />

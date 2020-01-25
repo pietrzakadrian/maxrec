@@ -6,12 +6,14 @@ import NavbarLinks from '../NavbarLinks';
 import { Wrapper } from './styles';
 
 const Navbar = () => (
-  <Wrapper as={Container}>
-    <Link to="/">
-      <img src={logo} alt="Maksymilian Grela" />
-    </Link>
-    <NavbarLinks desktop />
-  </Wrapper>
+  <header>
+    <Wrapper as={Container}>
+      <Link to="/">
+        <img src={logo} alt="Maksymilian Grela" />
+      </Link>
+      <NavbarLinks desktop />
+    </Wrapper>
+  </header>
 );
 
 export default Navbar;

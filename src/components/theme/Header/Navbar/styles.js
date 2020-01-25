@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors, media } from 'utils';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   padding: 3rem 0 1.5rem;
   align-items: center;
   justify-content: space-between;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors } from 'utils';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.nav`
   a {
     color: #6d6d6d;
     text-decoration: none;

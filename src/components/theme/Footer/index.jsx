@@ -30,7 +30,7 @@ export const Footer = () => (
         <Heading>MAXREC</Heading>
 
         <Description>
-          <div>Maksymilian Grela</div>
+          <h1>Maksymilian Grela</h1>
           <div>Warszawa, Polska</div>
           <br />
           <div>
