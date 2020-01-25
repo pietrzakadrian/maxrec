@@ -7,14 +7,13 @@ import { recaptcha_key } from 'data/config';
 import { Error, Center, InputField } from './styles';
 
 const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) => (
-  <Form name="portfolio-dev" method="post">
+  <Form method="post">
     <InputField>
       <Input
         as={FastField}
         type="text"
         name="name"
         component="input"
-        aria-label="name"
         placeholder="Nazwa*"
         error={touched.name && errors.name}
       />
@@ -23,7 +22,6 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
     <InputField>
       <Input
         id="email"
-        aria-label="email"
         component="input"
         as={FastField}
         type="email"
@@ -37,7 +35,6 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
       <Input
         as={FastField}
         component="textarea"
-        aria-label="message"
         id="message"
         rows="8"
         type="text"

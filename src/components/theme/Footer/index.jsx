@@ -34,7 +34,7 @@ export const Footer = () => (
           <div>Warszawa, Polska</div>
           <br />
           <div>
-            Tel: <a href="tel:664 205 145">664 205 145</a>
+            Tel: <a href="tel:664205145">664 205 145</a>
           </div>
           <div>
             Email: <a href="mailto:kontakt@maxrec.pl">kontakt@maxrec.pl</a>
