@@ -30,8 +30,8 @@ export const Footer = () => (
         <Heading>MAXREC</Heading>
 
         <Description>
-          <h1>Maksymilian Grela</h1>
-          <div>Warszawa, Polska</div>
+          <h1>Usługi foto i wideo</h1>
+          <h2>Warszawa, Polska</h2>
           <br />
           <div>
             Tel: <a href="tel:664205145">664 205 145</a>

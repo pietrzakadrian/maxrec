@@ -110,7 +110,8 @@ export const Description = styled.div`
   font-weight: 700;
 
   div,
-  h1 {
+  h1,
+  h3 {
     margin-bottom: 0.4rem;
     letter-spacing: 0.5px;
     font-size: 14px;

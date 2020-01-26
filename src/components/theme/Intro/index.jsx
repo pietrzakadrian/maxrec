@@ -21,7 +21,7 @@ export const Intro = () => {
               <img src={logo} alt="MAXREC Maksymilian Grela" />
             </Thumbnail>
 
-            <Button transparent="true" as={AnchorLink} href="#about-us">
+            <Button transparent as={AnchorLink} href="#about-us">
               Rozpocznij
             </Button>
           </Parallax>

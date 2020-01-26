@@ -1,5 +1,5 @@
 module.exports = {
-  defaultTitle: 'MAXREC | Maksymilian Grela',
+  defaultTitle: 'MAXREC | Maksymilian Grela | usługi foto i wideo',
   author: 'Maksymilian Grela',
   url: 'https://maxrec.pl',
   legalName: 'Maksymilian Grela',

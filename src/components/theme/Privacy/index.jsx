@@ -1,12 +1,12 @@
 import React from 'react';
 import { TextWrapper, ComponentWrapper, Container } from 'components/common';
-import { H2 } from 'components/common/Typography';
+import { H3 } from 'components/common/Typography';
 import { PrivacyWrapper } from './styles';
 
 export const Privacy = () => (
   <ComponentWrapper large as={Container}>
     <PrivacyWrapper>
-      <H2>Polityka prywatności</H2>
+      <H3>Polityka prywatności</H3>
 
       <TextWrapper>
         Niniejsza polityka prywatności i plików cookies opisuje zasady postępowania z danymi osobowymi oraz

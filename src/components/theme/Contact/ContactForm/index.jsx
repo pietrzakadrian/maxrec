@@ -12,6 +12,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
       <Input
         as={FastField}
         type="text"
+        aria-label="name"
         name="name"
         component="input"
         placeholder="Nazwa*"
@@ -22,6 +23,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
     <InputField>
       <Input
         id="email"
+        aria-label="email"
         component="input"
         as={FastField}
         type="email"
@@ -35,6 +37,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
       <Input
         as={FastField}
         component="textarea"
+        aria-label="message"
         id="message"
         rows="8"
         type="text"

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, ComponentWrapper, TextWrapper } from 'components/common';
-import { H2 } from 'components/common/Typography';
+import { H3 } from 'components/common/Typography';
 
 export const AboutUs = () => (
   <ComponentWrapper large as={Container} id="about-us">
-    <H2>O nas</H2>
+    <H3>O nas</H3>
 
     <TextWrapper center>
       <span>

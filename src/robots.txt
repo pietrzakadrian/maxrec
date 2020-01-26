@@ -1,2 +1,6 @@
+# All robots allowed
 User-agent: *
-Disallow: /
+Disallow:
+
+# Sitemap files
+Sitemap: https://maxrec.pl/sitemap.xml
