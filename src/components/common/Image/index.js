@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from 'utils';
 
 export const Image = styled.div`
-  background-image: ${({ src }) => `url('${src}')`};
+  background-image: ${({ image }) => `url('${image}')`};
   height: 224px;
   width: 100%;
   background-size: contain;

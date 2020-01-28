@@ -16,7 +16,7 @@ export const Intro = () => {
       <Header sidebar={sidebar} toggle={toggle} />
       <IntroWrapper as={Container}>
         <Center>
-          <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+          <Parallax y={[-20, 20]} tagOuter="figure">
             <Thumbnail>
               <img src={logo} alt="MAXREC Maksymilian Grela" />
             </Thumbnail>

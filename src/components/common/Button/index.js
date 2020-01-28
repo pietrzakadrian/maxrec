@@ -25,6 +25,7 @@ export const Button = styled.button`
 
     &:hover {
       cursor: default;
+      color: #cb2027;
     }
   }
 

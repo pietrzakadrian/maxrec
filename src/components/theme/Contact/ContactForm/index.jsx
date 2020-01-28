@@ -40,7 +40,6 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
         aria-label="message"
         id="message"
         rows="8"
-        type="text"
         name="message"
         placeholder="Wiadomość*"
         error={touched.message && errors.message}

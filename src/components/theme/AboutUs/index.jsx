@@ -7,15 +7,12 @@ export const AboutUs = () => (
     <H3>O nas</H3>
 
     <TextWrapper center>
-      <span>
-        Od kilku lat zajmujemy się tworzeniem filmów fabularnych, reklam i teledysków. <br />
-        Oprócz pełnych realizacji, oferujemy również możliwość współpracy jako operatorzy kamer, montażyści i
-        dźwiękowcy.
-        <br />
-        Dodatkowo realizujemy sesje zdjęciowe (plenerowe, studyjne, reklamowe).
-        <br />
-        Zlecenia wykonujemy głównie w Warszawie, lecz współpraca możliwa jest na terenie całej Polski.
-      </span>
+      Od kilku lat zajmujemy się tworzeniem filmów fabularnych, reklam i teledysków. <br />
+      Oprócz pełnych realizacji, oferujemy również możliwość współpracy jako operatorzy kamer, montażyści i dźwiękowcy.
+      <br />
+      Dodatkowo realizujemy sesje zdjęciowe (plenerowe, studyjne, reklamowe).
+      <br />
+      Zlecenia wykonujemy głównie w Warszawie, lecz współpraca możliwa jest na terenie całej Polski.
     </TextWrapper>
   </ComponentWrapper>
 );
